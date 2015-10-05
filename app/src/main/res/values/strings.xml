@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">pocketSomme</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_user_home">userHome</string>
+
+
+    <color name="black">#000000</color>
+    <color name="white">#ffffff</color>
+    <color name="rouge">#420518</color>
+    <color name="vert">#224205</color>
+
+
+    <string name="title_activity_search">Search</string>
+    <string name="title_activity_favorites">Favorites</string>
+    <string name="title_activity_search_results">SearchResults</string>
+    <string name="title_activity_wine_map">WineMap</string>
+    <string name="title_activity_history">History</string>
+</resources>

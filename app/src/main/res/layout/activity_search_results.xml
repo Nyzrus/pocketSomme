@@ -1,0 +1,92 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="@color/white"
+    tools:context="com.example.surzyn.pocketsomme.SearchResults">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="36dp"
+            android:background="@color/rouge"
+            android:textStyle="bold"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:gravity="center_vertical"
+            android:textSize="14dp"
+            android:paddingLeft="12dp"
+            android:textColor="@color/white"
+            android:text="Search: "
+            android:id="@+id/header"
+            />
+
+        <ListView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/searchList" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:id="@+id/noResultLabel"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:paddingTop="420dp"
+        android:gravity="bottom|center_horizontal"
+        android:layout_height="fill_parent">
+
+        <Button
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:onClick="addToHistory"
+            android:elevation="10dp"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:text="+"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:background="@drawable/circlebutton">
+        </Button>
+
+        <Button
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:onClick="addToFavorites"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:layout_marginLeft="65dp"
+            android:layout_marginRight="65dp"
+            android:text="Fav"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:background="@drawable/circlebutton">
+        </Button>
+
+        <Button
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:onClick="goToWebsite"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:text="->"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:background="@drawable/circlebutton">
+        </Button>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,120 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="@color/white"
+    tools:context="com.example.surzyn.pocketsomme.userHome">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textStyle="bold"
+            android:textSize="30dp"
+            android:paddingBottom="30dp"
+            android:textColor="@color/black"
+            android:id="@+id/textView3" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="80dp">
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/bottle"
+                android:id="@+id/imageView4" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:layout_height="fill_parent">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="0dp"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:text="Wines: "
+                    android:textColor="@color/black"
+                    android:textSize="24dp"
+                    android:id="@+id/historyTV" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="0dp"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:text="Varietal: "
+                    android:textColor="@color/black"
+                    android:textSize="24dp"
+                    android:id="@+id/varietalTV" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:paddingTop="75dp"
+            android:layout_height="match_parent">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Search Wines"
+                android:onClick="toSearch"
+                android:textSize="12dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/userbutton"
+                android:textColor="@color/white"
+                android:id="@+id/searchWinesButton" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Favorites"
+                    android:onClick="toFavorites"
+                    android:textSize="12dp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/userbutton"
+                    android:textColor="@color/white"
+                    android:id="@+id/favoriteButton" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="History"
+                    android:layout_weight="1"
+                    android:onClick="toHistory"
+                    android:textSize="12dp"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/userbutton"
+                    android:textColor="@color/white"
+                    android:layout_gravity="center_horizontal"
+                    android:id="@+id/historyButton" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
